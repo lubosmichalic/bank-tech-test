@@ -39,6 +39,13 @@ date || credit || debit || balance
 ```
 
 ### Approach
+Using Test Driven Developemnt and SOLID principles, while trying to learn and practice object callisthenics,
+I hope to write out this program to satisfy all the specs while practice good Software Craftmanship.
+
+### Technologies Used
+ - Ruby
+ - RSpec for Testing
+ 
 
 
 ### User Stories
