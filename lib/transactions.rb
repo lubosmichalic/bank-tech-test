@@ -10,6 +10,10 @@ class Transactions
     record_transaction(amount, time, :debit)
   end
 
+  def record_withdrawal(amount, time = Time.now)
+    record_transaction(amount, time, :credit)
+  end
+
   private
 
   def record_transaction(amount, time, type)

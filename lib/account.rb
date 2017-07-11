@@ -16,4 +16,9 @@ class Account
     @balance += amount
     @transactions.record_deposit(amount, time)
   end
+
+  def withdraw(amount, time = Time.now)
+    @balance -= amount
+    @transactions.record_deposit(amount, time)
+  end
 end

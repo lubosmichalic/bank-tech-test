@@ -6,8 +6,11 @@ describe Transactions do
   it { is_expected.to respond_to(:record_deposit) }
 
   it 'records a deposit to the log' do
-    expect{ transactions.record_deposit(200) }.to change{ transactions.log.length }.by(1)
+    expect { transactions.record_deposit(200) }.to change { transactions.log.length }.by(1)
   end
 
+  it 'records a withdrawal to the log' do
+    expect { transactions.record_withdrawal(100) }.to change { transactions.log.length }.by(1)
+  end
 
 end
